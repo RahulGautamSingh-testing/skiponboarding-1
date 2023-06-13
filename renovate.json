@@ -6,7 +6,7 @@
   "regexManagers": [
   {
    "fileMatch": ["^Dockerfile$"],
-   "matchStrings": ["renovate: datasource=(?<datasource>\\S+)\\s+RUN\\sinstall-tool\\s(?<depName>\\S+)\\s(?<currentValue>\\S+)[\"']?"]
+   "matchStrings": ["renovate: datasource=(?<datasource>\\S+)\\s+RUN\\sinstall-tool\\s(?<depName>\\S+)\\s(?<currentValue>\\S+)"]
   }
   ]
 }
