@@ -2,5 +2,11 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "local>RahulGautamSingh-testing/renovate-config"
+  ],
+  "regexManagers": [
+  {
+   "fileMatch": ["^Dockerfile$"],
+   "matchStrings": ["renovate: datasource=(?<datasource>\\S+)\\s+RUN\\sinstall-tool\\s(?<depName>\\S+)\\s(?<currentValue>\\S+)[\"']?"]
+  }
   ]
 }
